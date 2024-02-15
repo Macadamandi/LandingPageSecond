@@ -359,6 +359,7 @@ body {
 .meet-content .meet-content__bottom .meet-content__row .meet-content__col:hover {
   background-color: #628595;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 .meet-content .meet-content__bottom .meet-content__canvas {
   display: flex;
@@ -379,6 +380,87 @@ body {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.largest-sales, .recent-transactions {
+  background-color: #fff;
+}
+
+.largest-sales-swiper, .recent-transactions-swiper {
+  overflow: hidden;
+}
+
+.swiper-btn-prev {
+  margin-right: 5px;
+}
+
+.swiper-btn-prev, .swiper-btn-next {
+  padding: 13px;
+  border-radius: 50%;
+  border: 1px solid #565656;
+  display: inline-block;
+}
+
+.swiper-btn-prev:hover, .swiper-btn-next:hover {
+  cursor: pointer;
+}
+
+.largest-sales-content, .recent-transactions-content {
+  color: #000;
+}
+.largest-sales-content .largest-sales-content__top, .largest-sales-content .recent-transactions-content__top, .recent-transactions-content .largest-sales-content__top, .recent-transactions-content .recent-transactions-content__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 130px 0 95px 0;
+  align-items: center;
+}
+.largest-sales-content .largest-sales-content__top .recent-transactions-content__time, .largest-sales-content .recent-transactions-content__top .recent-transactions-content__time, .recent-transactions-content .largest-sales-content__top .recent-transactions-content__time, .recent-transactions-content .recent-transactions-content__top .recent-transactions-content__time {
+  display: inline-block;
+  margin-top: 15px;
+}
+.largest-sales-content .largest-sales-content__top .largest-sales-content__header, .largest-sales-content .largest-sales-content__top .recent-transactions-content__header, .largest-sales-content .recent-transactions-content__top .largest-sales-content__header, .largest-sales-content .recent-transactions-content__top .recent-transactions-content__header, .recent-transactions-content .largest-sales-content__top .largest-sales-content__header, .recent-transactions-content .largest-sales-content__top .recent-transactions-content__header, .recent-transactions-content .recent-transactions-content__top .largest-sales-content__header, .recent-transactions-content .recent-transactions-content__top .recent-transactions-content__header {
+  font-size: 52px;
+  font-weight: 500;
+}
+.largest-sales-content .largest-sales-content__top .largest-sales-content__btn, .largest-sales-content .largest-sales-content__top .recent-transactions-content__btn, .largest-sales-content .recent-transactions-content__top .largest-sales-content__btn, .largest-sales-content .recent-transactions-content__top .recent-transactions-content__btn, .recent-transactions-content .largest-sales-content__top .largest-sales-content__btn, .recent-transactions-content .largest-sales-content__top .recent-transactions-content__btn, .recent-transactions-content .recent-transactions-content__top .largest-sales-content__btn, .recent-transactions-content .recent-transactions-content__top .recent-transactions-content__btn {
+  padding: 15px 38px;
+  border: 1px solid rgba(54, 54, 54, 0.2);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card {
+  display: flex;
+  flex-direction: column;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__img, .largest-sales-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__img, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__img, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__img, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__img, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__img, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__img, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__img, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__img, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__img, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__img, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__img, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__img, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__img, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__img, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 26px;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__number, .largest-sales-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__number, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__number, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__number, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__number, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__number, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__number, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__number, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__number, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__number, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__number, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__number, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__number, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__number, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__number, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__number {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__cost, .largest-sales-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__cost, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__cost, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__cost, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__cost, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__cost, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__cost, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__cost, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__cost, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__cost, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__cost, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__cost, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__cost, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__cost, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__cost, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__cost {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__cost, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__cost, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__cost, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__cost, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__cost, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__cost, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__cost, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__cost {
+  margin-bottom: 35px;
+}
+.largest-sales-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__date, .largest-sales-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__time, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__date, .largest-sales-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__time, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__date, .largest-sales-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__time, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__date, .largest-sales-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__time, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .largest-sales-content__date, .recent-transactions-content .largest-sales-content__row .largest-sales-content__card .recent-transactions-content__time, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .largest-sales-content__date, .recent-transactions-content .largest-sales-content__row .recent-transactions-content__card .recent-transactions-content__time, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .largest-sales-content__date, .recent-transactions-content .recent-transactions-content__row .largest-sales-content__card .recent-transactions-content__time, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .largest-sales-content__date, .recent-transactions-content .recent-transactions-content__row .recent-transactions-content__card .recent-transactions-content__time {
+  font-size: 17px;
+  font-weight: 400;
+}
+.largest-sales-content .swiper-wrapper--margin-sales, .recent-transactions-content .swiper-wrapper--margin-sales {
+  margin-bottom: 35px;
+}
+.largest-sales-content .swiper-wrapper--margin-transactions, .recent-transactions-content .swiper-wrapper--margin-transactions {
+  margin-bottom: 15px;
 }
 
 .btn {

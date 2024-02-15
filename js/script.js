@@ -36,3 +36,23 @@ const swiper = new Swiper('.swiper',{
     invert: false
   }
 });
+
+const swiper1 = new Swiper('.largest-sales-swiper', {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  }
+});
+
+const swiper2 = new Swiper('.recent-transactions-swiper', {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  }
+});
