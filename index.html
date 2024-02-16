@@ -202,7 +202,7 @@
         <div class="container">
           <div class="meet-content">
             <div class="meet-content__top">
-              <h2 class="meet-content__header">Meet the Punks</h2>
+              <h3 class="meet-content__header">Meet the Punks</h3>
               <div class="meet-content__description">
                 <div class="meet-content__text">
                   The CryptoPunks are 24x24 pixel art images, generated
@@ -452,14 +452,233 @@
         </div>
       </section>
       <section class="connection">
-        <div class="container"></div>
+        <div class="container">
+          <div class="connection-content connection-content--margin">
+            <h2 class="connection-content__left">How do I get a punk?</h2>
+            <div class="connection-content_right">
+              <div class="connection-content__item">
+                <div class="connection-content__number">
+                  <span class="connection-content__number-icon">1</span>
+                </div>
+                <div class="connection-content__description">
+                  <img class="connection-content__icon""
+                  src="/img/content5/metamask.png" alt="">
+                  <p class="connection-content__title">
+                    Download and install MetaMask
+                  </p>
+                  <p class="connection-content__text">
+                    Download and install a Chrome browser plugin called
+                    <a
+                      class="connection-content__link"
+                      href="https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=ru"
+                      >MetaMask</a
+                    >. This will allow websites (that you authorise) access to
+                    your Ethereum account.
+                  </p>
+                  <button class="connection-content__btn btn">
+                    Download MetaMask
+                  </button>
+                </div>
+              </div>
+              <div class="connection-content__item">
+                <div class="connection-content__number">
+                  <span class="connection-content__number-icon">2</span>
+                </div>
+                <div class="connection-content__description">
+                  <img class="connection-content__icon""
+                  src="/img/content5/ethereum.png" alt="">
+                  <p class="connection-content__title">Buy some Ethereum</p>
+                  <p class="connection-content__text">
+                    If you made a new account, buy some Ethereum. The MetaMask
+                    plugin has a button that will allow you to buy Ether from
+                    Coinbase.
+                  </p>
+                </div>
+              </div>
+              <div class="connection-content__item">
+                <div class="connection-content__number">
+                  <span class="connection-content__number-icon">3</span>
+                </div>
+                <div class="connection-content__description">
+                  <p class="connection-content__title">
+                    Start bidding, buying and selling
+                  </p>
+                  <p class="connection-content__text">
+                    Once you have the plugin installed, this website will
+                    recognise it and add buttons that allow you to bid on, buy
+                    and sell punks directly in the interface.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="details-faq">
-        <div class="container"></div>
+        <div class="container">
+          <div class="details-faq-content details-faq-content--margin">
+            <h2 class="details-faq-content_header">Details and FAQ</h2>
+            <div class="details-faq-content__list">
+              <div class="details-faq-content__row">
+                <h3 class="details-faq-content_subject">
+                  Where are the images for the punks stored?
+                </h3>
+                <div class="details-faq-content__description">
+                  When originally released, the actual images of the punks were
+                  too large to store on the blockchain, so we took a hash of the
+                  <span class="details-faq-content__bold-text"
+                    >composite image</span
+                  >
+                  of all the punks and
+                  <span class="details-faq-content__bold-text"
+                    >embeded it into the contract</span
+                  >. You can verify that the punks being managed by the Ethereum
+                  contract are the True Official Genuine CryptoPunks<sup
+                    ><small>TM</small></sup
+                  >
+                  by calculating an SHA256 hash on the cryptopunks image and
+                  comparing it to the hash stored in the contract.Since then,
+                  due to some clever compression ideas and some help from
+                  friends of the punks we have managed to put the entire image
+                  and attribute data fully on chain. You can read more about the
+                  mechanisms and details of the process in the
+                  <a class="details-fag-content__link-text" href="#"
+                    >announcement blog post</a
+                  >.
+                </div>
+              </div>
+              <div class="details-faq-content__row">
+                <h3 class="details-faq-content_subject">
+                  Are the punks an ERC-721 token?
+                </h3>
+                <div class="details-faq-content__description">
+                  No. The CryptoPunks pre-date the ERC-721 standard and are a
+                  custom contract, that means it doesn't comply with any
+                  standards. They are <i>almost</i> an
+                  <a class="details-fag-content__link-text" href="#"
+                    >ERC20 token</a
+                  >. We support the methods that provide your balance so you can
+                  watch CryptoPunks as a token in your wallet and see how many
+                  you own. None of the other methods are the same since you're
+                  not transferring a simple balance, but need to reference which
+                  specific Punk you want to work with.
+                </div>
+              </div>
+              <div class="details-faq-content__row">
+                <h3 class="details-faq-content_subject">
+                  Where does the market data on this site come from?
+                </h3>
+                <div class="details-faq-content__description">
+                  The prices, bids and sales you see on this site are loaded
+                  from the Cryptopunks contract on the Ethereum blockchain.
+                  Because the Cryptopunks pre-date the ERC-721 standard (and all
+                  third party NFT marketplaces) we also needed to write a market
+                  so the punks could be transacted. We have no control over the
+                  contract governing this market, and have no access to any
+                  additional data beyond what the blockchain provides. In fact
+                  anyone else could write a web front end for it.
+                </div>
+              </div>
+              <div class="details-faq-content__row">
+                <h3 class="details-faq-content_subject">
+                  Do you charge any fees for transactions?
+                </h3>
+                <div class="details-faq-content__description">
+                  No. We charge no fees for Cryptopunks transacted through the
+                  built-in market beyond the ones charged by Ethereum (gas).The
+                  contract source and more technical details are available
+                  <a class="details-fag-content__link-text" href="#"
+                    >on Github</a
+                  >.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content__top">
+            <a href="#"
+              ><img
+                class="footer-content__logo"
+                src="/img/logo-footer.png"
+                alt=""
+            /></a>
+            <ul class="footer-content__menu">
+              <li class="footer-content__item">
+                <a class="footer-content__link" href="#">Buy a Punk</a>
+              </li>
+              <li class="footer-content__item">
+                <a class="footer-content__link" href="#"
+                  >View Full Collection</a
+                >
+              </li>
+            </ul>
+            <div class="media">
+              <a class="media__link" href="#">
+                <svg
+                  width="21"
+                  height="17"
+                  viewBox="0 0 21 17"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="media__img icon-discord"
+                    d="M17.9316 1.0115C16.6051 0.360247 15.4547 0.287858 13.9675 0.0130478C13.9404 0.00775084 12.9904 -0.0134571 12.9764 0.0130478C12.7935 0.361203 13.1182 0.65451 12.9764 1.0115C11.3768 0.755253 9.58806 0.755253 8.02127 1.0115C7.87935 0.646575 8.20503 0.361203 8.02127 0.0130478C8.00732 -0.0125743 7.05733 0.00863366 7.03024 0.0130478C5.54383 0.286986 4.39341 0.359374 3.06612 1.0115C3.05463 1.0168 3.07266 1.00003 3.06612 1.0115C0.368072 5.32457 -0.269547 9.8365 0.093031 13.9914C0.0782646 13.9792 0.0946761 14.0117 0.093031 13.9914C1.87313 15.3902 3.35587 16.4239 5.04818 16.9868C5.03094 17.0107 5.07527 16.9956 5.04818 16.9868C5.4485 16.4019 6.72428 15.6385 7.03024 14.9899C7.0483 14.9519 6.07612 15.0049 6.03921 14.9899C5.4732 14.7602 5.56663 14.3095 5.04818 13.9914C5.00717 13.9658 5.01045 14.0215 5.04818 13.9914C4.94401 14.0833 5.15728 13.904 5.04818 13.9914C5.02602 13.9808 5.06703 13.9746 5.04818 13.9914C8.45412 15.6553 12.5838 15.6553 15.9495 13.9914C15.9298 13.9747 15.9716 13.98 15.9495 13.9914C15.8396 13.904 16.0537 14.0834 15.9495 13.9914C15.9873 14.0215 15.9905 13.9658 15.9495 13.9914C15.4311 14.3156 15.5254 14.7611 14.9585 14.9899C14.9216 15.0049 13.9494 14.9519 13.9675 14.9899C14.28 15.6376 15.5566 16.4018 15.9495 16.9868C15.9225 16.9956 15.966 17.0115 15.9495 16.9868C17.65 16.4239 19.1245 15.3902 20.9047 13.9914C20.903 14.0118 20.9202 13.9792 20.9047 13.9914C21.3385 9.18798 20.2818 4.71045 17.9316 1.0115C17.9431 1.0168 17.9258 0.999145 17.9316 1.0115ZM7.03024 11.9945C6.00481 11.9945 5.04818 10.2363 5.04818 8.99916C5.04818 7.76209 5.98843 7.00224 7.03024 7.00224C8.08023 7.00224 9.02866 7.77092 9.0123 8.99916C9.0123 10.2363 8.07202 11.9945 7.03024 11.9945ZM13.9675 11.9945C12.942 11.9945 11.9854 10.2363 11.9854 8.99916C11.9854 7.76209 12.9257 7.00224 13.9675 7.00224C15.0175 7.00224 15.9659 7.77092 15.9495 8.99916C15.9495 10.2363 15.0175 11.9945 13.9675 11.9945Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a class="media__link" href="#"
+                ><svg
+                  width="18"
+                  height="15"
+                  viewBox="0 0 18 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="media__img icon-twitter"
+                    d="M17.977 2.21071C17.517 2.80819 16.6265 3.75336 15.9958 4.17812C15.9958 4.01337 15.9958 4.33419 15.9958 4.17812C16.0009 7.0124 15.094 10.0558 13.0239 12.0478C10.9537 14.0397 8.00859 15.0384 5.09899 14.9989C3.41686 15.0044 1.65485 14.7393 0.145892 14.0152C0.0645221 13.9805 0.145585 14.1017 0.145892 14.0152C0.145892 13.8907 0.018062 13.0315 0.145892 13.0315C1.79938 12.9783 3.78907 13.0319 5.09899 12.0478C3.60235 12.0183 2.74685 10.4239 2.12713 9.09664C2.07985 9.16039 2.09584 9.02421 2.12713 9.09664C2.04664 9.09047 2.1744 9.0329 2.12713 9.09664C2.58199 9.1411 2.67889 9.22134 3.11775 9.09664C1.46558 8.76276 0.323559 7.77993 0.145892 6.14553C0.139581 6.06712 0.0804314 5.20792 0.145892 5.16182C0.0714564 5.13125 0.211342 5.11582 0.145892 5.16182C0.589253 5.3523 1.64257 6.14157 2.12713 6.14553C0.679439 5.22052 -0.404834 2.82585 0.145892 1.22701C0.202743 1.07165 0.970394 1.25901 1.13651 1.22701C1.02322 1.10442 1.30262 1.195 1.13651 1.22701C3.09008 3.25118 6.21258 5.02793 9.06147 5.16182C8.98856 4.87834 8.06887 4.47038 8.07085 4.17812C8.0975 2.64566 9.57738 0.802027 11.0427 0.243301C12.5079 -0.315415 13.9174 0.119459 15.0052 1.22701C15.7466 1.08949 16.3171 0.583008 16.9864 0.243301C17.0355 0.213501 17.928 0.213501 17.977 0.243301C18.0077 0.291059 18.0077 1.17925 17.977 1.22701C17.6528 1.94982 16.6906 1.80559 15.9958 2.21071C16.6042 2.14201 17.4028 2.41848 17.977 2.21071C18.0254 2.17867 17.9287 2.17867 17.977 2.21071C18.0176 2.22875 17.9651 2.16894 17.977 2.21071C18.002 2.17481 17.989 2.25248 17.977 2.21071Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-content__bottom">
+            <p class="footer-content-copyright">
+              © 2024 CryptoPunks. All right reserved.
+            </p>
+            <ul class="footer-content__menu">
+              <li class="footer-content__item">
+                <a
+                  class="footer-content__link footer-content__link--style"
+                  href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer-content__item">
+                <a
+                  class="footer-content__link footer-content__link--style"
+                  href="#"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="footer-content__item">
+                <a
+                  class="footer-content__link footer-content__link--style"
+                  href="#"
+                  >Cookies Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
