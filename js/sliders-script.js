@@ -1,3 +1,4 @@
+// Слайдеры 
 const swiper = new Swiper('.swiper',{
   slidesPerView: 7,
   loop: true,
@@ -6,6 +7,9 @@ const swiper = new Swiper('.swiper',{
     disableOnInteraction: false
   },
   breakpoints: {
+    200: {
+      slidesPerView: 1
+    },
     // when window width is >= 320px
     320: {
       slidesPerView: 2,
@@ -44,7 +48,32 @@ const swiper1 = new Swiper('.largest-sales-swiper', {
   navigation: {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
-  }
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    200: {
+      slidesPerView: 1
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    // when window width is >= 820px
+    820: {
+      slidesPerView: 5,
+      spaceBetween: 40
+    },
+  },
 });
 
 const swiper2 = new Swiper('.recent-transactions-swiper', {
@@ -54,5 +83,33 @@ const swiper2 = new Swiper('.recent-transactions-swiper', {
   navigation: {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
-  }
+  },
+  breakpoints: {
+    200: {
+      slidesPerView: 1
+    },
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    // when window width is >= 820px
+    820: {
+      slidesPerView: 5,
+      spaceBetween: 40
+    },
+  },
 });
+
+
+// Бургер меню
